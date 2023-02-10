@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".AdminActivity"
+    android:background="@color/sky_blue">
+
+    <Button
+        android:id="@+id/buttonLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtViewProduct"
+        android:text="Odjavi se" />
+
+    <Button
+        android:id="@+id/buttonMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Mapa" />
+
+    <Button
+        android:id="@+id/buttonAdminOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtViewProduct"
+        android:text="Narachki" />
+
+
+    <TextView
+        android:id="@+id/txtViewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vnesete go imeto na produktot: "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/buttonLogOut"/>
+
+    <EditText
+        android:id="@+id/editTxtProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewProduct"
+        android:layout_marginTop="10dp"
+        android:hint="Ime na produkt"
+        android:lines="1"
+        android:maxLines="4"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/txtViewBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTxtProduct"
+        android:layout_marginTop="10dp"
+        android:text="Vnesete go imeto na brendot: "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editTxtBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewBrand"
+        android:layout_marginTop="10dp"
+        android:hint="Brend"
+        android:lines="1"
+        android:maxLines="4"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/txtViewPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTxtBrand"
+        android:layout_marginTop="10dp"
+        android:text="Vnesete ja cenata bez popust: "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editTxtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewPrice"
+        android:layout_marginTop="10dp"
+        android:hint="Cena"
+        android:lines="1"
+        android:maxLines="4"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/txtViewDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTxtPrice"
+        android:layout_marginTop="10dp"
+        android:text="Vnesete ja novata cena so popust: "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editTxtDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewDiscount"
+        android:layout_marginTop="10dp"
+        android:hint="Nova cena"
+        android:lines="1"
+        android:maxLines="4"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/txtViewExpire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTxtDiscount"
+        android:layout_marginTop="10dp"
+        android:text="Do koga vazhi popustot na ovoj produkt: "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editTxtExpire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewExpire"
+        android:layout_marginTop="10dp"
+        android:hint="01/01/2023"
+        android:lines="1"
+        android:maxLines="4"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Vnesi Produkt" />
+
+
+</RelativeLayout>

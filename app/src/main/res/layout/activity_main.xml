@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context=".MainActivity"
+        android:background="@color/sky_blue">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Korisnichko ime"
+            android:minHeight="20dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="20dp"
+            android:hint="Lozinka"
+            android:inputType="textPassword"
+            android:minHeight="20dp" />
+
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="20dp"
+            android:hint="Povtori ja lozinkata"
+            android:inputType="textPassword"
+            android:minHeight="20dp" />
+
+        <Button
+            android:id="@+id/btnsignup"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/repassword"
+            android:layout_marginTop="20dp"
+            android:text="Registriraj se!" />
+
+        <Button
+            android:id="@+id/btnsignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vekje registriran korisnik? Najavi se!"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/btnsignup"/>
+
+        <Button
+            android:id="@+id/adminsignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Najavi se kako administrator!"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/btnsignin"/>
+
+    </RelativeLayout>
+</ScrollView>

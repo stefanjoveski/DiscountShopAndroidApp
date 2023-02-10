@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Order"
+    android:background="@color/sky_blue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vnesete informacii za dostava na produktite:"
+        android:textSize="19dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtViewOrder"/>
+
+    <EditText
+        android:id="@+id/orderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Ime"
+        android:minHeight="50dp"
+        android:layout_below="@+id/txtViewOrder"/>
+
+    <EditText
+        android:id="@+id/orderCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderName"
+        android:layout_marginTop="20dp"
+        android:hint="Drzhava"
+        android:minHeight="20dp" />
+
+    <EditText
+        android:id="@+id/orderCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderCountry"
+        android:layout_marginTop="20dp"
+        android:hint="Grad"
+        android:minHeight="20dp" />
+
+    <EditText
+        android:id="@+id/orderStreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderCity"
+        android:layout_marginTop="20dp"
+        android:hint="Ulica"
+        android:minHeight="20dp" />
+
+    <Button
+        android:id="@+id/btnOrderNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Narachaj"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/orderStreet"/>
+
+</RelativeLayout>
